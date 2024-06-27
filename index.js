@@ -152,11 +152,30 @@
 //condition statement
 //Executes a block of code if a specified condition is true.
 
-let x=18;
-let age;
-if(age<=18){
-    console.log("you can vote");
+// let x=18;
+// let age;
+// if(age<=18){
+//     console.log("you can vote");
+// }
+// else{
+//     console.log("you can not vote");
+// }
+
+// let x = 5;
+// let marks;
+// if (x >= 50) {
+//     marks = "pass";
+// } else {
+//     marks = "fail";
+// }
+// console.log(marks);
+
+let x=34;
+let number;
+if(x>=24){
+    number ="23,45,87,67";
 }
 else{
-    console.log("you can not vote");
+    number = "-23,-45,-87,-67";
 }
+console.log(number);
