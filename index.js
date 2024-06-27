@@ -148,3 +148,15 @@
 // let x=32;
 // let y=32;
 // console.log("x<=y",x<=y);
+
+//condition statement
+//Executes a block of code if a specified condition is true.
+
+let x=18;
+let age;
+if(age<=18){
+    console.log("you can vote");
+}
+else{
+    console.log("you can not vote");
+}
