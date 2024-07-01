@@ -170,12 +170,67 @@
 // }
 // console.log(marks);
 
-let x=34;
-let number;
-if(x>=24){
-    number ="23,45,87,67";
+// let x=34;
+// let number;
+// if(x>=24){
+//     number ="23,45,87,67";
+// }
+// else{
+//     number = "-23,-45,-87,-67";
+// }
+// console.log(number);
+
+
+// what is function in js
+// A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, 
+// but for a procedure to qualify as a function.
+
+// function func(hello){
+//     console.log(hello);
+// }
+// func("kya haal hai")
+
+// for return
+
+// function sum(x,y){
+//     s=x+y;
+//     console.log("addition");
+//     return s;
+// }
+// let v=sum(3,4)
+// console.log(v);
+
+// console.log(1,2,3,4);
+
+// function sum(x,y,z,a)
+// {
+//     s=x+y+z+a;
+// console.log("add");
+// return s;
+// }
+// let v=sum(1,2,3,4)
+// console.log(v);
+
+//what is arrow function
+// Arrow function {()=>} is concise way of writing JavaScript functions in shorter way. 
+// Arrow functions were introduced in the ES6 version.
+// function sum(a,b){
+//     return a+b;
+// }
+// ((a,b)=>{
+// console.log(a+b)})(3,4)
+
+// const add=(num1,num2) =>({username:"Nitesh"})
+// console.log(add(2,4));
+// // without parenthesis we can not write object
+
+// const add=(num1,num2) =>(num1+num2)
+// console.log(add(3,4));
+
+// const Mul=(num1,num2) =>num1*num2
+// console.log(Mul(4,6));
+
+const mul=(num1,num2)=>{
+return num1*num2 
 }
-else{
-    number = "-23,-45,-87,-67";
-}
-console.log(number);
+console.log(mul(6,7));
