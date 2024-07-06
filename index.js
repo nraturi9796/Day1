@@ -267,3 +267,23 @@
 //     console.log("Hello!");
 // };
 // greeet();
+
+//                                   recursive function 
+
+// A recursive function is a function that calls itself somewhere within the body of the function
+
+// function factorial(n) {
+//     // Base case: if n is 0, the factorial is 1
+//     if (n === 0) {
+//         return 1;
+//     }else{
+//     // Recursive case: n * factorial of (n-1)
+//     return n * factorial(n - 1);
+//     }
+// }
+
+// console.log(factorial(5));
+
+
+
+
