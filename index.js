@@ -181,7 +181,8 @@
 // console.log(number);
 
 
-// what is function in js
+//                                        what is function in js
+
 // A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, 
 // but for a procedure to qualify as a function.
 
@@ -211,7 +212,8 @@
 // let v=sum(1,2,3,4)
 // console.log(v);
 
-//what is arrow function
+//                                   what is arrow function
+
 // Arrow function {()=>} is concise way of writing JavaScript functions in shorter way. 
 // Arrow functions were introduced in the ES6 version.
 // function sum(a,b){
@@ -283,6 +285,16 @@
 // }
 
 // console.log(factorial(5));
+
+//                                       Function Scope
+// Declare a variable inside a function and try accessing it outside the function 
+
+
+function Scope (){
+var a="Amit"
+console.log(a);
+}
+Scope()
 
 
 
