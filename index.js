@@ -230,7 +230,40 @@
 // const Mul=(num1,num2) =>num1*num2
 // console.log(Mul(4,6));
 
-const mul=(num1,num2)=>{
-return num1*num2 
-}
-console.log(mul(6,7));
+// const mul=(num1,num2)=>{
+// return num1*num2 
+// }
+// console.log(mul(6,7));
+                                        // High Order Function
+
+// In JavaScript, a higher-order function is a function that can accept other functions as arguments, return functions, or both.
+//  They enable abstraction, composition, and the creation of more flexible and reusable code.
+
+// Syntax:
+
+// function higherOrderFunction(callback) {
+//     // Perform some operations
+//     // Call the callback function
+//     callback();
+// }
+// function callbackFunction() {
+//     console.log("Callback function is executed.");
+// }
+// // Passing the callback function to the higher-order function
+// higherOrderFunction(callbackFunction);
+ 
+//                                       Anonymous Function 
+
+// It is a function that does not have any name associated with it. 
+// Normally we use the function keyword before the function name to define a function in JavaScript, however, in anonymous functions in JavaScript, 
+// we use only the function keyword without the function name.
+
+// let x = function () {  
+//     console.log('It is an anonymous function');  
+// };  
+// x();  
+
+// let greeet=function (){
+//     console.log("Hello!");
+// };
+// greeet();
