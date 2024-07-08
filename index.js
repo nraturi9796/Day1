@@ -290,12 +290,59 @@
 // Declare a variable inside a function and try accessing it outside the function 
 
 
-function Scope (){
-var a="Amit"
-console.log(a);
-}
-Scope()
+// function Scope (){
+// var a="Amit"
+// console.log(a);
+// }
+// Scope()
+
+//          Immediately Invoked Function Expression(IIFE)
+
+// Those function which is execute immediate ,is known as IIFE
+// IIFE are used to 'Avoid polluting the global namespace'
+
+// (function chai(){
+//     let a="Chai ready hai"
+//     console.log(a);
+// })
+// () ;
 
 
+                                // Solving Global Scope Problems
+// Encapsulation: By wrapping code in an IIFE, you create a local scope for variables defined within the IIFE. 
+//This means that these variables won't be accessible outside the IIFE, thus avoiding potential conflicts with other scripts.
+
+// javascript
+// Copy code
+// (function() {
+//     var localVar = "I am local";
+//     console.log(localVar); // "I am local"
+// })();
+
+// console.log(localVar); // Uncaught ReferenceError: localVar is not defined
 
 
+// (function greedy(){
+//     console.log('Kya chai ready hai');
+// }
+// )();
+// (()=>{
+//     console.log('ha chai ready hai');
+// })()
+ 
+ //                                     Call Back Function
+
+//  A callback is a function passed as an argument to another function, which gets invoked after the main function completes its execution. 
+//  You pass the callback function to the main function as an argument, and once the main function finishes its task, 
+//it calls the callback function to deliver a result.
+
+// function myFirst() {
+//     myDisplayer("Hello");
+//   }
+  
+//   function mySecond() {
+//     myDisplayer("Goodbye");
+//   }
+  
+//   myFirst();
+//   mySecond();
