@@ -346,3 +346,76 @@
   
 //   myFirst();
 //   mySecond();
+
+                //                          currying function
+
+//It is a technique in functional programming, that transforms the function of multiple arguments into several functions of a single argument in sequence.                
+
+// function calculateVolume(length) {
+// 	return function (breadth) {
+// 		return function (height) {
+// 			return length * breadth * height;
+// 		}
+// 	}
+// }
+// console.log(calculateVolume(4)(5)(6));
+
+// function Calculate(a){
+// return function(b){
+//     return function (c){
+//         return a+b+c
+//     }
+// }
+// }
+// console.log(Calculate(2)(23)(45));
+
+// function SendEmail(Email) {
+//     return function(Subject) {
+//         return function(Name) {
+//             console.log(`Sending Email to ${Email} with subject ${Subject} And name is ${Name}`);
+//         }
+//     }
+// }
+
+// let step1 = SendEmail('nraturi246@gmail.com');
+// let step2 = step1("Email pass");
+// step2("John Doe"); // You need to call step2 with the third argument
+
+
+//                             Function Composition
+
+//In functional programming, function composition is a powerful technique
+// that allows developers to combine multiple functions into a single function.
+
+// function add(a,b){
+//     return a+b;
+// }
+// function subtraction(a,b){
+//     return a-b;
+// }
+// function compostwofunction (fn1,fn2){
+// return function(a,b){
+//  return fn2(fn1(a,b))
+
+// };
+
+// }
+// const task=compostwofunction(add,subtraction);
+
+// console.log(task(2,3));
+
+// const add5 = (x) => x + 5;
+// const multiplyBy3 = (x) => x * 3;
+// const subtract10 = (x) => x - 10;
+// function compose(fn1,fn2){
+//     return function(a,b){
+//      return fn2(fn1(a,b))
+    
+//     };
+    
+//     }
+
+// const composedFunction = compose(subtract10, multiplyBy3, add5);
+// const result = composedFunction(7);
+
+// console.log(result);
