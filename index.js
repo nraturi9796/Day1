@@ -419,3 +419,43 @@
 // const result = composedFunction(7);
 
 // console.log(result);
+
+//                                         Memoization
+//Memoization is an optimaization technique that can be used to reduce time concuming calculation by saving privious input 
+//to something called cache and returning result from it.
+
+// function memoize(fn) {
+//     const cache = {};
+//     return function(...args) {
+//       const key = JSON.stringify(args);
+//       if (cache[key] !== undefined) {
+//         return cache[key];
+//       }
+//       const result = fn(...args);
+//       cache[key] = result;
+//       return result;
+//     };
+//   }
+  
+//   const add = (a, b) => a + b;
+//   const memoizedAdd = memoize(add);
+  
+//   console.log(memoizedAdd(1, 2)); // Outputs: 3
+//   console.log(memoizedAdd(1, 2)); // Outputs: 3 (cached result)
+//   console.log(memoizedAdd(2, 3)); // Outputs: 5
+   
+//                                             Exception Handling
+
+//Exception handling in JavaScript is a way to handle errors gracefully, allowing the program to continue running or provide meaningful error messages to users. 
+//JavaScript uses the try...catch statement for exception handling.
+
+// try{
+//     console.log(age);
+// }
+// catch(err){
+//     console.log(err.name);
+//     console.log(err.message);
+// }
+// const a=2+8;
+// console.log("Important",a);
+
