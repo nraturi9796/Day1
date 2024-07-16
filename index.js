@@ -531,19 +531,29 @@
    
     //                                   creating obj using class
 
-    class Person {
-        constructor(name, age) {
-            this.name = name;
-            this.age = age;
-        }
+    // class Person {
+    //     constructor(name, age) {
+    //         this.name = name;
+    //         this.age = age;
+    //     }
     
-        greet() {
-            console.log('Hello!');
+    //     greet() {
+    //         console.log('Hello!');
+    //     }
+    // }
+    
+    // let jane = new Person('Jane', 25);
+    // console.log(jane.name); // Output: Jane
+    // jane.greet(); // Output: Hello!
+    
+ //                                     Nested Obj
+ let country={
+    name:"India",
+    State:{
+        name:"Uttarakhand",
+        dis:{
+        name:"Tehri"
         }
     }
-    
-    let jane = new Person('Jane', 25);
-    console.log(jane.name); // Output: Jane
-    jane.greet(); // Output: Hello!
-    
- 
+ }
+ console.log(country.State.dis.name);
