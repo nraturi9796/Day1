@@ -459,3 +459,91 @@
 // const a=2+8;
 // console.log("Important",a);
 
+//                                    Object 
+//In JavaScript, an object is a collection of properties, where each property is defined as a key-value pair. 
+//Objects can be used to store various kinds of data and more complex entities
+//Properties of an Object
+//Key (or Property Name): A string (or Symbol) that identifies the property.
+//Value: Any valid JavaScript value, including other objects, arrays, functions, and primitives (strings, numbers, booleans, etc.).
+
+//Object Literal Syntax:
+// let object={
+//     name: "Anjali",
+//     add: "Ghar"
+// }
+// console.log(object);
+// object.add="Nitesh"
+// console.log(object);
+// object.name="Nitesh"
+// object.age=14
+// console.log(object);
+// let obj={
+// name:"Anjali",
+// age:23
+// }
+// console.log(obj);
+// obj.add="Ghar"
+// console.log(obj);
+// obj.name="Nitesh"
+// console.log(obj);
+
+// let objwithABC=new Object()
+//     console.log(objwithABC)
+//     output is {}---> it is a empty object or  singleton object
+
+
+// let obj={}
+// console.log(obj);
+// output is {}---> it is a empty object or non singleton object
+ 
+                                  // Using the new Object() Syntax:
+
+// let obj =new Object({name:"Ankit",age:21,add:"Pali"})
+// console.log(obj);
+// obj.mobile=3340004
+// obj.city="Noida"
+// obj.name="Aman"
+// console.log(obj);
+
+
+                                       // object with constructor function
+
+// function constructor(name,age,add,mobile){
+// this.name=name;
+// this.age=age;
+// this.add=add;
+// this.mobile=mobile;
+// }
+// let consjt=constructor("Tinku",54,"Mirzapur",84766445)
+// console.log(constructor.name);
+
+//function student(name,address,mobile){
+// return {
+//     name:name,
+//     address:address,
+//     mobile:mobile
+// }
+//     }
+//     let student1=student("guddu","Mirzapur",884746664)
+//     let studen=student("bablu,guddu","Mirzapur",868699764)
+//       console.log(student1);
+//       console.log(studen);
+   
+    //                                   creating obj using class
+
+    class Person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+    
+        greet() {
+            console.log('Hello!');
+        }
+    }
+    
+    let jane = new Person('Jane', 25);
+    console.log(jane.name); // Output: Jane
+    jane.greet(); // Output: Hello!
+    
+ 
