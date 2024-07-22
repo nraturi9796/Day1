@@ -547,13 +547,66 @@
     // jane.greet(); // Output: Hello!
     
  //                                     Nested Obj
- let country={
-    name:"India",
-    State:{
-        name:"Uttarakhand",
-        dis:{
-        name:"Tehri"
-        }
+//  let country={
+//     name:"India",
+//     State:{
+//         name:"Uttarakhand",
+//         dis:{
+//         name:"Tehri"
+//         }
+//     }
+//  }
+//  console.log(country.State.dis.name);
+
+//                                   Array
+
+// An array in JavaScript is a data structure used to store multiple values in a single variable. 
+// It can hold various data types and allows for dynamic resizing.
+//  Elements are accessed by their index, starting from 0.
+
+// arr1 =[54,65,75,75];
+// console.log(arr1);
+// console.log(arr1[1]);
+// arr=["amit","ankit","mohit"]
+// console.log(arr);
+// console.log(arr[2]);
+// const arr3=new Array(["KIA","MG","TATA","Mahindra"])
+// console.log(arr3);
+// let arr=["ankit","mohit","anuj","kartike"]
+// arr.splice(2,1)
+// console.log(arr);
+//let arr1=[12,43,45,67,78]
+// console.log(arr1.length);
+
+// let Gods=["Shivji","Krishna","Nagrja","Ambeji","radheji"]
+// console.log(Gods);
+
+// let marks=[34,45,6,78,8,9,53,34]
+// console.log(marks);
+// console.log(typeof(marks));
+// console.log(marks[3],marks[4]);
+
+//                                              LOOPS
+
+//Loops are handy, if you want to run the same code over and over again, each time with a different value.
+
+// let arr1=["Tinku","Anjali","Himani","Shivani"]
+// for(let i=0;i<arr1.length;i++){
+//     console.log(arr1[i]);
+// }
+
+//                                          FOR OF
+
+// let city=["Noida","Delhi","Gurgaon","Dehradun","Srinager"];
+// for(let ar1 of city){
+//     //console.log(city);
+//     console.log(ar1.toUpperCase());
+// }
+
+let arr1=[85,97,44,37,76,60]
+sum=0;
+    for(let val of arr1){
+        sum =sum+val;
     }
- }
- console.log(country.State.dis.name);
+    let avg =sum/arr1.length;
+    console.log('avg marks of the class = $ {avg}');
