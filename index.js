@@ -586,6 +586,110 @@
 // console.log(typeof(marks));
 // console.log(marks[3],marks[4]);
 
+//                                              Array Method
+//It is used to insert element in last of array.
+
+// let arr1=[12,34,65,78,87,54];
+// arr1.push(188)
+// arr1.push(32)
+// console.log(arr1);
+
+//                                              Pop Method
+//It is used to delete element from last index.
+
+// let arr=[12,13,14,15,16]
+// arr.pop()
+// console.log(arr);
+
+//                                              unshift (value)
+// it is used to add element at first element of array
+
+// let arr=[11,22,33,44,55]
+// arr.unshift(10)
+// console.log(arr);
+
+//                                              Shift() Method
+// It is used to delete first element at first array or index
+
+// let arr=[32,54,65,87,93]
+// arr.shift()
+// console.log(arr);
+
+//                                              Splice() Method
+//it is  used to perform updation,insertion,and deletion in array
+
+//Delete three element from array--->
+// let arr=[10,11,12,13,14,15,16]
+// arr.splice(0,3)
+// console.log(arr);
+
+//Updation value at index 4 to 20
+
+// let arr=[12,14,16,18,22]
+// arr.splice(3,2,22,23)
+// console.log(arr);
+
+//Insertion value at index
+
+// let arr=[11,12,16,17]
+// arr.splice(2,0,13,14,15)
+
+// console.log(arr);
+
+//                                             slice()
+//It is used to copy array
+//it will not modify the orignal array
+
+// let arr=[20,21,22,23,24,25]
+// let a=arr.slice(0,3)
+// console.log(a);
+
+//                                            indexof method
+//It  is used to return array index postion if element is available otherwise it will return -1 value.
+
+// let arr=[23,24,25,26,27,28]
+// let a=arr.indexOf(24)
+// console.log(a);
+
+
+//                                            includes() method
+// it is cheack element,if element is prasent it will give true and if element is not present it will give false
+
+// let arr=[23,24,25,27,28]
+// //let a=arr.includes(27)
+// let a=arr.includes(7)
+// console.log(a);
+
+//                                           reverse()
+//it is used to reverse the array
+
+//it will modify original array
+// let arr=[12,13,14,15,16,17,18]
+// console.log(arr.reverse());
+
+//                                           Short(Call back) Method
+// it will modify the orignally array 
+//if call back return - value---->It will short in assending order
+// if call back return +value----->It will short in descending order
+//if call back return 0 value----->It will not short
+
+// let arr=[30,98,75,87,45,76,23]
+// console.log(arr.sort((a,b) => a-b));
+
+// let arr=[30,98,75,87,45,76,23]
+// console.log(arr.sort((a,b)=>b-a));
+
+//                                             foreach call back
+//It is a highr order function 
+//it is used to iterate over array element and index
+const arr=[1,2,3,4,5,6]
+arr.forEach((val)=>{
+    if(val % 2===0)
+    {
+       console.log(val+" "+" is even nuumber");
+    }
+});
+
 //                                              LOOPS
 
 //Loops are handy, if you want to run the same code over and over again, each time with a different value.
@@ -603,10 +707,10 @@
 //     console.log(ar1.toUpperCase());
 // }
 
-let arr1=[85,97,44,37,76,60]
-sum=0;
-    for(let val of arr1){
-        sum =sum+val;
-    }
-    let avg =sum/arr1.length;
-    console.log('avg marks of the class = $ {avg}');
+// let arr1=[85,97,44,37,76,60]
+// sum=0;
+//     for(let val of arr1){
+//         sum =sum+val;
+//     }
+//     let avg =sum/arr1.length;
+//     console.log('avg marks of the class = $ {avg}');
