@@ -587,8 +587,11 @@
 // console.log(marks[3],marks[4]);
 
 //                                              Array Method
-//It is used to insert element in last of array.
 
+
+                         //                      push()
+
+     //It is used to insert element in last of array.                    
 // let arr1=[12,34,65,78,87,54];
 // arr1.push(188)
 // arr1.push(32)
@@ -604,11 +607,12 @@
 //                                              unshift (value)
 // it is used to add element at first element of array
 
-// let arr=[11,22,33,44,55]
-// arr.unshift(10)
-// console.log(arr);
+// let arr1=[11,22,33,44,55]
+// arr1.unshift(10)
+// console.log(arr1);
 
 //                                              Shift() Method
+
 // It is used to delete first element at first array or index
 
 // let arr=[32,54,65,87,93]
@@ -616,6 +620,7 @@
 // console.log(arr);
 
 //                                              Splice() Method
+
 //it is  used to perform updation,insertion,and deletion in array
 
 //Delete three element from array--->
@@ -633,7 +638,6 @@
 
 // let arr=[11,12,16,17]
 // arr.splice(2,0,13,14,15)
-
 // console.log(arr);
 
 //                                             slice()
@@ -645,6 +649,7 @@
 // console.log(a);
 
 //                                            indexof method
+
 //It  is used to return array index postion if element is available otherwise it will return -1 value.
 
 // let arr=[23,24,25,26,27,28]
@@ -653,6 +658,7 @@
 
 
 //                                            includes() method
+
 // it is cheack element,if element is prasent it will give true and if element is not present it will give false
 
 // let arr=[23,24,25,27,28]
@@ -667,7 +673,7 @@
 // let arr=[12,13,14,15,16,17,18]
 // console.log(arr.reverse());
 
-//                                           Short(Call back) Method
+//                                           Sort(Call back) Method
 // it will modify the orignally array 
 //if call back return - value---->It will short in assending order
 // if call back return +value----->It will short in descending order
@@ -682,13 +688,74 @@
 //                                             foreach call back
 //It is a highr order function 
 //it is used to iterate over array element and index
-const arr=[1,2,3,4,5,6]
-arr.forEach((val)=>{
-    if(val % 2===0)
-    {
-       console.log(val+" "+" is even nuumber");
-    }
-});
+// const arr=[1,2,3,4,5,6]
+// arr.forEach((val)=>{
+//     if(val % 2===0)
+//     {
+//        console.log(val+" "+" is even nuumber");
+//     }
+// });
+
+//     let arr=[21,43,11,32,12,16,82]
+//     arr.forEach(()=>{
+// console.log(arr);
+//     })
+
+
+//                                             Map()
+//it is a higher order function 
+//it is used to itrate over array
+//it will not modify original array
+//it will return new array
+
+// let arr=[21,32,12,13,,18,92,82]
+// let newarr=arr.map(value=>value*8)
+// console.log(newarr);
+
+
+//                                              filter()
+//it is a higher order function 
+//it is used to itrate over array
+//it will not modify original array
+//it will return new array
+
+// let arr=[21,12,2,1,3,52,31,92]
+// let arr1=arr.filter((nums)=>nums>4)
+// console.log(arr1);
+
+// channing---->
+// let arr=[12,31,52,2,7,19,15]
+// let newnums=arr.map((nums)=>nums*2).map((nums)=>nums+1).filter((nums)=>nums>25)
+// console.log(newnums);
+
+// let arr=[32,1,4,52,12,,43,11]
+//  arr.filter((nums)=>{
+// console.log(nums>4);
+//  })
+
+//  let arr=[11,12,13,14,3,4,1,10,17,19]
+//  let arr1=arr.filter((nums)=>{
+// nums>4;
+//  })
+//  console.log(arr1); o/p []
+
+//  let arr=[11,12,13,14,3,4,1,10,17,19]
+//  let arr1=arr.filter((nums)=>{
+//  return nums>4;
+//  })
+//  console.log(arr1); 
+
+//                                              Reduce()
+//It is a high order function
+//It is used to itrerate and conclude result to a single value
+//it will not modify origninal array
+//it is return single value
+// let arr=[31,12,11,14,73,4]
+// let newarr=arr.reduce(function(acc,currentval){
+//     console.log('acc: ${acc} and currentval:${currentval}');
+//     return acc+currentval
+// },3)
+// console.log(newarr);
 
 //                                              LOOPS
 
